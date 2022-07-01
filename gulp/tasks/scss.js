@@ -35,7 +35,9 @@ export const scss = () => {
         app.isBuild,
         webpcss({
           webpClass: ".webp",
-          noWebpClass: ".no-webp"
+          noWebpClass: ".no-webp",
+          replace_from: /\.(png|jpg|jpeg)/,
+          replace_to: '.webp'
         })
       )
     )
