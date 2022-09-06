@@ -6,7 +6,6 @@ flsFunctions.isWebp();
 import * as checkBrows from "./modules/checkIE.js";
 checkBrows.checkIE();
 
-
 // Подключение Меню Бургер
 import * as burger from "./modules/burger.js";
 burger.isBurger();
@@ -34,7 +33,3 @@ img.ibg(); */
 // Подключение слайдера
 /* import Swiper, {Navigation, Pagination} from 'swiper'; 
 const swiper = new Swiper(); */
-
-
-
-

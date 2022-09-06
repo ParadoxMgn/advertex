@@ -13,7 +13,7 @@ export const otfToTtf = () => {
       })
     )
   )
-  // Конвертирууем в .ttf
+  // Конвертируем в .ttf
   .pipe(fonter({
     formats: ['ttf']
   }))
@@ -32,7 +32,7 @@ export const otfToWoff = () => {
       })
     )
   )
-  // Конвертирууем в .woff
+  // Конвертируем в .woff
   .pipe(fonter({
     formats: ['woff']
   }))
@@ -40,7 +40,7 @@ export const otfToWoff = () => {
   .pipe(app.gulp.dest(`${app.path.build.fonts}`))
   // Ищем файлы шрифтов .ttf
   .pipe(app.gulp.src(`${app.path.srcFolder}/fonts/*.ttf`, {}))
-  // Конвертирууем в .woff2
+  // Конвертируем в .woff2
   .pipe(ttf2woff2())
   // Выгружаем в папку с результатом
   .pipe(app.gulp.dest(`${app.path.build.fonts}`))

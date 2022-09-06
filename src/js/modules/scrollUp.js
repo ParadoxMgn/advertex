@@ -1,10 +1,10 @@
 // Скролл вверх документа
 export function scrollUP () {
   const clickUps = document.querySelector('.scroll-up');
-  window.addEventListener('scroll', scrol);
+  window.addEventListener('scroll', scroll);
   clickUps.addEventListener('click', times);
 
-  function scrol() {
+  function scroll() {
     const scroll = document.querySelector('.scroll-up');
     setTimeout(10);
     if(window.pageYOffset >= 200 ){

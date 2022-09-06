@@ -2,11 +2,11 @@ import { rootFolder } from "../config/path.js";
 
 export const server = (done) => {
   app.plugins.browsersync.init({
-    /* server: {
+    server: {
       baseDir: `${app.path.build.html}`
-    }, */
-    proxy: `${rootFolder}`,
+    },
     notify: false,
-    port: 3000
+    port: 3000,
+    // proxy: `${rootFolder}`,
   })
 }
